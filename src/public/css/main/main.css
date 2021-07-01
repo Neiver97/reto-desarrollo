@@ -1,0 +1,190 @@
+.info{
+    display: flex;
+    color: rgb(214, 135, 135);
+    background-color: rgb(39, 36, 36);
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+    height: 100px;
+    background-color:#042656;
+    align-items: center;
+    color: rgb(246, 239, 228);
+}
+.navInfo{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.nav-link{
+    border-bottom: rgb(251, 250, 247);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+.lista{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 15%;
+    align-items: center;
+}
+.infoSis{
+    margin-bottom: 4rem;
+}
+.bodySec{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(173, 234, 245);
+    flex-direction: column;
+}
+.table{
+    width: 80%;
+}
+img{
+    height: 600px;
+    width: 100%;
+}
+
+#firstA{
+    display: flex;
+    padding-right: 15px;
+    color: rgb(243, 240, 234);
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#secondA{
+    display: flex;
+    padding-right: 15px;
+    color: rgb(243, 240, 234);
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#thirdA{
+    display: flex;
+    padding-right: 15px;
+    color: rgb(243, 240, 234);
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#navbarDropdownMenuLink{
+    color: rgb(243, 240, 234);
+}
+
+#fourtA{
+    display: flex;
+    padding-right: 15px;
+    color: rgb(243, 240, 234);
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 20px;
+    border-bottom-color: fuchsia;
+}
+#firstA:hover{
+    color: rgb(158, 150, 135);
+    border-bottom: 3.5px solid rgb(158, 150, 135);    
+}
+#secondA:hover{
+    color: rgb(158, 150, 135);
+    border-bottom: 3.5px solid rgb(158, 150, 135); 
+}
+#thirdA:hover{
+    color: rgb(158, 150, 135);
+    border-bottom: 3.5px solid rgb(158, 150, 135); 
+}
+#fourtA:hover{
+    color: rgb(158, 150, 135);
+    border-bottom: 3.5px solid rgb(158, 150, 135); 
+}
+
+
+.footer{
+    display: flex;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#042656;;
+}
+.left{
+
+    display: flex;
+    height: 100%;
+    width: 33.3%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: ivory;
+    
+}
+.center{
+    display: flex;
+    height: 100%;
+    width: 33.3%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: ivory;
+}
+.right{
+    display: flex;
+    height: 100%;
+    width: 33.3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: ivory;
+}
+.mainFoot{
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid tan;
+    width: 300px;
+}
+.facebook{
+    font-size: 30px;
+    color: ivory;
+    padding: 3px;
+}
+.linkedin{
+    font-size: 30px;
+    color: ivory;
+    padding: 3px;
+}
+.twitter{
+    font-size: 30px;
+    color: ivory;
+    padding: 3px;
+}
+
+.youtube{
+    font-size: 30px;
+    color: ivory;
+    padding: 3px;
+}
+
+.instagram{
+    font-size: 30px;
+    color: ivory;
+    padding: 3px;
+}

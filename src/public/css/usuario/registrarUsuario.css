@@ -1,0 +1,46 @@
+.sectionC{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+}
+.forCotn{
+    display: flex;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(249, 242, 255);
+    border-radius: 30px;
+    -webkit-box-shadow: 4px 7px 63px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 7px 63px 2px rgba(0,0,0,0.75);
+    box-shadow: 4px 7px 63px 2px rgba(0,0,0,0.75);
+}
+.dataInfoP{
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+    color:#ffffff ;
+}
+.colL{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4.5%;
+    width: 100%;
+}
+.colR{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid #042656;
+}
+.row{
+    width: 70%;
+}
+.botones{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
