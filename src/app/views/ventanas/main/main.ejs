@@ -34,15 +34,15 @@
             <tbody>
               <tr>
                 <% for( let i = 0; i < usuario.length; i++ ) { %>
-                    <tr>
+                    <tr> 
                         <td><%= usuario[i].idUsuario %> </td>
                         <td><%= usuario[i].nombre %> </td>
                         <td><%= usuario[i].apellido %> </td>
                         <td><%= usuario[i].nombreUsuario %> </td>
                         <td><%= usuario[i].fecha %> </td>
                         <td><%= usuario[i].estado %> </td>
-                        <td class="d-flex justify-content-center flex-colum" ><a style="color: rgb(36, 34, 34);" href="/delete/<%= usuario[i].idUsuario %> "><i class="fas fa-trash"></i></i></a></td>
-                        <td class=""><a  data-bs-toggle="modal" data-bs-target="#exampleModal<%= usuario[i].idUsuario %>" data-bs-whatever="@mdo"><i class="fas fa-user-edit"></i></a></td>
+                        <td class="d-flex justify-content-center flex-row" ><a style="color: rgb(36, 34, 34);" href="/delete/<%= usuario[i].idUsuario %> "><i class="fas fa-trash"></i></i></a></td>
+                        <td align="center"><a  data-bs-toggle="modal" data-bs-target="#exampleModal<%= usuario[i].idUsuario %>" data-bs-whatever="@mdo"><i class="fas fa-user-edit"></i></a></td>
                     </tr>
                     
                     <div class="modal fade" id="exampleModal<%= usuario[i].idUsuario %>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
