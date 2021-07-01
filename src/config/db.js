@@ -2,10 +2,10 @@ const mysql = require('mysql');
 
 const db_config ={
 
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE
+    host: 'us-cdbr-east-04.cleardb.com',
+    user: 'b8d8179d8134af',
+    password: 'b782654c',
+    database: 'heroku_4de5a65c92fe458'
     
 };
 
