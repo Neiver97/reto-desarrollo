@@ -1,0 +1,9 @@
+.sectionUser{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(173, 234, 245);
+    flex-direction: column
+}

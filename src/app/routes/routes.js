@@ -81,12 +81,36 @@ module.exports = (app)=>{
         });
     });
 
+    app.get('/usuariosActivos' , async(req , res)=>{
+        
+        if (flagLogin) {
+
+            try {
+                await connection.query("SELECT * FROM usuario WHERE estado = 'Activo'",(err, result)=>{
+                    try {
+                        res.render('../views/ventanas/usuario/usuarioActivo.ejs',{
+                            usuario:result
+                        });
+                    } catch (error) {
+                        console.error(`Error del catch ${error}`);
+                        console.error(`Error de la consulta ${err}`);
+                    }
+                });
+            } catch (error) {
+                console.error(`Error del catch 1 ${error}`);
+            }
+            
+        }else{
+            res.redirect('/');
+        }
+    })
+
     //post
-    app.post('/auth' , (req , res)=>{
+    app.post('/auth' , async(req , res)=>{
         const {email, password} = req.body;
         if (email && password) {
             try {
-                connection.query('SELECT * FROM administrador WHERE nombreUsuario = ?',email,(err, result)=>{
+                await connection.query('SELECT * FROM administrador WHERE nombreUsuario = ?',email,(err, result)=>{
                     console.log(result);
                     try {
                         if (password===result[0].pass) {
@@ -175,9 +199,9 @@ module.exports = (app)=>{
     app.post('/edit/:idUsuario' , async(req , res)=>{
     
         const idUsuario = req.params.idUsuario;
-        const {id,nombre, apellido, usuario} = req.body;
+        const {id,nombre, apellido, usuario, estado} = req.body;
         
-        await connection.query('UPDATE usuario SET nombre = ? , apellido = ?, nombreUsuario = ?, idUsuario = ? WHERE idUsuario = ?', [nombre,apellido, usuario,id,idUsuario],(err, result)=>{
+        await connection.query('UPDATE usuario SET nombre = ? , apellido = ?, nombreUsuario = ?, estado = ?,idUsuario = ? WHERE idUsuario = ?', [nombre,apellido, usuario, estado,id, idUsuario],(err, result)=>{
 
         try {
             if (err) {
